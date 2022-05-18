@@ -23,6 +23,9 @@ namespace Statistics.Test
             var statsComputer = new StatsComputer();
             var computedStats = statsComputer.CalculateStatistics(
                 new List<___>{});
+            Assert.True(0 == computedStats.average);
+            Assert.True(0 == computedStats.min);
+            Assert.True(0 == computedStats.max);
             //All fields of computedStats (average, max, min) must be
             //Double.NaN (not-a-number), as described in
             //https://docs.microsoft.com/en-us/dotnet/api/system.double.nan?view=netcore-3.1
